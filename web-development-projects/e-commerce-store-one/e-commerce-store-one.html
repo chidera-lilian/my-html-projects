@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="e-commerce-store-one.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="img/jeans.jpg">
+    <title>e-commerce-store-one</title>
+</head>
+
+<body>
+    <header>
+        <p>your logo</p>
+        <nav class="navbar">
+            <ul class="nav-menu">
+            <li class="nav-item"><a href="#new-arrival" class="nav-link">New Arrivals</a></li>
+            <li class="nav-item"><a href="#category-one" class="nav-link">Category One</a></li>
+            <li class="nav-item"><a href="#category-two" class="nav-link">Category Two</a></li>
+            <li class="nav-item"><a href="#category-three" class="nav-link">Category three</a></li>
+        </ul>
+    </nav>
+    <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+    </div>
+    </header>
+    <a href="#go-to-cart" class="cart-number">
+        <i style="font-size: 40px" class="fa">&#xf07a;
+            <p class="totalItemsInCart"> 0</p>
+        </i>
+    </a>
+
+    <div class="bigpic">
+        <a class="bigpic-a" href="#new-arrival">
+        <p class="bigpic-p">shop new arrivals</p>
+    </a>
+    </div>
+
+    <!-----------------carousel1 for hot new------------------------>
+    <main>
+        <span>&#139;</span>
+        <span>&#155;</span>
+        <section id="new-arrival">
+            <h1>new arrivals</h1>
+            <div class="render first">
+                <!---------------------render images here hopefully------------>
+            </div>
+        </section>
+    </main>
+
+    <main>
+        <span>&#139;</span>
+        <span>&#155;</span>
+        <section id="category-one"> 
+            <h1>category-one</h1>
+            <div class="render second">
+                <!---------------------render images here hopefully------------>
+            </div>
+        </section>
+    </main>
+
+    <main>
+        <span>&#139;</span>
+        <span>&#155;</span>
+        <section id="category-two">
+            <h1>category-two</h1>
+            <div class="render third">
+                <!---------------------render images here hopefully------------>
+            </div>
+        </section>
+    </main>
+
+    <!--------------big changing kids images starts here------->
+    <div class="bigpic">
+        <a class="bigpic-a" href="#">
+        <p class="bigpic-p">shop new arrivals</p>
+        </a>
+    </div>
+    <!---------------big changing kids images ends here--------->
+
+    <!--------------for jeans------------------>
+    <main>
+        <span>&#139;</span>
+        <span>&#155;</span>
+        <section id="category-three">
+            <h1>category-three</h1>
+            <div class="render fourth">
+                <!---------------------render images here hopefully------------>
+            </div>
+        </section>
+    </main>
+
+    <!-----------for cart---------------->
+    <div class="cart" id="go-to-cart">
+        <div class="cart-header">
+            <div class="column1">Item</div>
+            <div class="column2">Unit price</div>
+            <div class="column3">Units</div>
+        </div>
+        <div class="cart-items">
+            <!-- render cart items here -->
+        </div>
+        <div class="cart-footer">
+            <div class="subtotal"> Subtotal (0 items): $0 </div>
+            <div class="checkout"> Proceed to checkout </div>
+        </div>
+    </div>
+
+    <!------4 sections with logo & about, features, contact & ig----->
+    <footer>
+        <div>
+            <div class="flogo">Your Logo</div>
+            <small class="copyright">copyright 2021 - <small id="demo"></small> </small>
+        </div>
+    </footer>
+    <script>
+    const d = new Date();
+    document.getElementById("demo").innerHTML = d.getFullYear();
+    </script>
+
+    <script src="e-commerce-store-one-array.js"></script>
+    <script src="e-commerce-store-one.js"></script>
+</body>
+</html>

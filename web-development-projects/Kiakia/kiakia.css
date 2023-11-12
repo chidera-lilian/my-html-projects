@@ -1,0 +1,161 @@
+    :root {
+        
+    }
+    
+    head {
+        background-color: #fdba0b;
+        -webkit-text-size-adjust: 100%;
+    line-height: 1.5;
+    font-family: -apple-system,
+    BlinkMacSystemFont,
+    Segoe UI,
+    Roboto,
+    Oxygen-Sans,
+    Ubuntu,
+    Cantarell,
+    Helvetica Neue,
+    sans-serif;
+    font-weight: 400;
+    color: rgba(0, 0, 0, .87);
+    font-size: 14px;
+    --pry-color: #fdba0b;
+    --sec-color: #181818;
+    --pry-color-light: #f9d57f;
+    --font: "pushpenny",
+    sans-serif;
+    --font-bold: "pushpenny-bold",
+    sans-serif;
+    --font-medium: "pushpenny-medium",
+    sans-serif;
+    --font-light: "pushpenny-light",
+    sans-serif;
+    --font-xbold: "pushpenny-xbold",
+    sans-serif;
+    box-sizing: inherit;
+    }
+
+    #__next{
+        -webkit-text-size-adjust: 100%;
+                line-height: 1.5;
+                font-weight: 400;
+                font-size: 15px;
+                --pry-color: #fdba0b;
+                --sec-color: #181818;
+                --pry-color-light: #f9d57f;
+                --font: "pushpenny",
+                sans-serif;
+                --font-bold: "pushpenny-bold",
+                sans-serif;
+                --font-medium: "pushpenny-medium",
+                sans-serif;
+                --font-light: "pushpenny-light",
+                sans-serif;
+                --font-xbold: "pushpenny-xbold",
+                sans-serif;
+                font-family: var(--font) !important;
+                color: #353d46 !important;
+                box-sizing: inherit;
+    }
+
+    a { 
+        text-decoration: none;
+    }
+
+    .hsn-txt {
+            -webkit-text-size-adjust: 100%;
+                line-height: 1.5;
+                font-weight: 400;
+                --pry-color: #fdba0b;
+                --sec-color: #181818;
+                --pry-color-light: #f9d57f;
+                --font: "pushpenny", sans-serif;
+                --font-bold: "pushpenny-bold", sans-serif;
+                --font-medium: "pushpenny-medium", sans-serif;
+                --font-light: "pushpenny-light", sans-serif;
+                --font-xbold: "pushpenny-xbold", sans-serif;
+                font-family: var(--font) !important;
+                color: #353d46 !important;
+                box-sizing: inherit;
+                font-size: 18px;
+                margin-left: 10px;
+                letter-spacing: -.02em;
+    }
+
+    .home-section-title {
+            -webkit-text-size-adjust: 100%;
+                --pry-color: #fdba0b;
+                --sec-color: #181818;
+                --pry-color-light: #f9d57f;
+                --font: "pushpenny", sans-serif;
+                --font-bold: "pushpenny-bold", sans-serif;
+                --font-medium: "pushpenny-medium", sans-serif;
+                --font-light: "pushpenny-light", sans-serif;
+                --font-xbold: "pushpenny-xbold", sans-serif;
+                color: #353d46 !important;
+                box-sizing: inherit;
+                line-height: 110%;
+                font-weight: 700;
+                font-size: 64px;
+                font-family: var(--font-medium);
+                margin: 20px 0;
+                letter-spacing: -.02em;
+    }
+
+    .home-section-desc {
+            -webkit-text-size-adjust: 100%;
+                line-height: 1.5;
+                --pry-color: #fdba0b;
+                --sec-color: #181818;
+                --pry-color-light: #f9d57f;
+                --font: "pushpenny", sans-serif;
+                --font-bold: "pushpenny-bold", sans-serif;
+                --font-medium: "pushpenny-medium", sans-serif;
+                --font-light: "pushpenny-light", sans-serif;
+                --font-xbold: "pushpenny-xbold", sans-serif;
+                font-family: var(--font) !important;
+                color: #353d46 !important;
+                box-sizing: inherit;
+                font-weight: 500;
+                font-size: 20px;
+    }
+
+    .download-app-btn-wrapper {
+            -webkit-text-size-adjust: 100%;
+                line-height: 1.5;
+                font-weight: 400;
+                font-size: 15px;
+                --pry-color: #fdba0b;
+                --sec-color: #181818;
+                --pry-color-light: #f9d57f;
+                --font: "pushpenny", sans-serif;
+                --font-bold: "pushpenny-bold", sans-serif;
+                --font-medium: "pushpenny-medium", sans-serif;
+                --font-light: "pushpenny-light", sans-serif;
+                --font-xbold: "pushpenny-xbold", sans-serif;
+                font-family: var(--font) !important;
+                color: #353d46 !important;
+                box-sizing: inherit;
+                margin: 30px 0;
+    }
+
+    .download-app-btn {
+            -webkit-text-size-adjust: 100%;
+                line-height: 1.5;
+                font-weight: 400;
+                font-size: 15px;
+                --pry-color: #fdba0b;
+                --sec-color: #181818;
+                --pry-color-light: #f9d57f;
+                --font: "pushpenny", sans-serif;
+                --font-bold: "pushpenny-bold", sans-serif;
+                --font-medium: "pushpenny-medium", sans-serif;
+                --font-light: "pushpenny-light", sans-serif;
+                --font-xbold: "pushpenny-xbold", sans-serif;
+                font-family: var(--font) !important;
+                box-sizing: inherit;
+                background-color: transparent;
+                color: #039be5;
+                -webkit-tap-highlight-color: transparent;
+                text-decoration: none;
+                margin-right: 30px;
+    }

@@ -1,0 +1,375 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Satisfy&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+* a {
+  text-decoration: none;
+  color: var(--yellow);
+}
+
+:root {
+  --black: #000000;
+  --white: #ffffff;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+  overflow: hidden;
+}
+
+.shortcut {
+  height: 1px;
+  border-radius: 50%;
+}
+
+header {
+  position: -webkit-sticky;
+  position: sticky;
+  background-color: var(--black);
+  top: 0;
+  z-index: 5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 10vh;
+  -webkit-box-shadow: 2px 1px 5px var(--white);
+          box-shadow: 2px 1px 5px var(--white);
+}
+
+header nav {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 1;
+}
+
+header nav p {
+  font-style: italic;
+  color: var(--white);
+  font-size: 2rem;
+}
+
+header nav p a {
+  font-family: 'Satisfy', cursive;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 65%;
+  height: 100%;
+}
+
+header nav ul .class {
+  display: none;
+}
+
+header nav ul li {
+  list-style-type: none;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  height: 100%;
+  width: 160px;
+}
+
+header nav ul li .about,
+header nav ul li .tech-stack,
+header nav ul li a {
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 1rem;
+  text-decoration: none;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 100%;
+  height: 50%;
+  text-align: center;
+  color: var(--white);
+  padding: .6rem 0 0 0;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+header nav ul li a:hover,
+header nav ul li .about:hover {
+  background-color: var(--white);
+  color: var(--black);
+  border-radius: 10px;
+}
+
+header nav ul li .about-text {
+  -webkit-transition: 1.5s ease-in-out;
+  transition: 1.5s ease-in-out;
+  position: absolute;
+  width: 30%;
+  top: 10vh;
+  right: -1000px;
+  height: auto;
+  border-radius: 20px;
+  text-align: center;
+  font-size: 1.3rem;
+  letter-spacing: .09rem;
+  z-index: 0;
+  font-family: 'Nunito', sans-serif;
+  background-color: var(--white);
+  color: var(--black);
+}
+
+header nav ul li .show {
+  right: 0;
+}
+
+header .burger {
+  cursor: pointer;
+  display: none;
+}
+
+header .connect {
+  cursor: pointer;
+  border-radius: 10px;
+  -webkit-transition: 10s ease-in;
+  transition: 10s ease-in;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+header .connect img {
+  width: 30px;
+  height: 30px;
+}
+
+header .connect .contact {
+  width: 10%;
+  height: auto;
+  position: absolute;
+  top: -1000px;
+  right: 10px;
+  border-radius: 15px;
+  background-color: var(--white);
+  -webkit-transition: 1.5s ease-in-out;
+  transition: 1.5s ease-in-out;
+}
+
+header .connect .contact img {
+  width: 40px;
+  height: 40px;
+}
+
+header .connect .wow {
+  top: 10vh;
+}
+
+footer {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  height: 10vh;
+  bottom: 0;
+  background-color: var(--black);
+  -webkit-box-shadow: 2px 1px 5px var(--white);
+          box-shadow: 2px 1px 5px var(--white);
+  margin-top: 0;
+}
+
+footer p small {
+  color: white;
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    z-index: 3;
+    display: -ms-grid;
+    display: grid;
+    place-items: center;
+  }
+  header nav {
+    position: absolute;
+    height: auto;
+  }
+  header nav p {
+    font-family: 'Water Brush', cursive;
+    font-style: italic;
+    letter-spacing: .2rem;
+    color: var(--background);
+    font-size: 1.5rem;
+    z-index: 1;
+  }
+  header nav ul {
+    position: absolute;
+    left: -500px;
+    top: 7vh;
+    width: 100%;
+    height: 500px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-transition: 1s ease-in-out;
+    transition: 1s ease-in-out;
+    background-color: var(--black);
+  }
+  header nav ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-transition: 8s ease-in-out;
+    transition: 8s ease-in-out;
+    margin-bottom: 20px;
+    height: 100px;
+  }
+  header nav ul li a,
+  header nav ul li .tech-stack,
+  header nav ul li .about {
+    padding: 0;
+    color: var(--white);
+    border-radius: 0;
+    display: -ms-grid;
+    display: grid;
+    place-items: center;
+    border: 3px dotted var(--white);
+  }
+  header nav ul li a:hover,
+  header nav ul li .tech-stack:hover,
+  header nav ul li .about:hover {
+    background-color: var(--white);
+    color: var(--black);
+  }
+  header nav ul li .about-text {
+    position: absolute;
+    margin: 0;
+    width: 80%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    top: -1000px;
+    right: 30px;
+    -webkit-transition: 2s ease-in-out;
+    transition: 2s ease-in-out;
+    font-size: 1rem;
+    letter-spacing: .1rem;
+    color: var(--black);
+    display: none;
+  }
+  header nav ul li .about:hover .about-text {
+    color: white;
+  }
+  header nav ul li .show {
+    top: 8vh;
+  }
+  header nav ul .connect {
+    width: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 50px;
+    position: relative;
+  }
+  header nav ul .connect .contact {
+    position: absolute;
+    -webkit-transition: 1.5s ease-in-out;
+    transition: 1.5s ease-in-out;
+    width: 200px;
+    left: -1000px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    top: -35px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    background-color: var(--yellow);
+  }
+  header nav ul .connect .contact img {
+    margin-right: 0;
+    width: 30px;
+    height: 30px;
+  }
+  header nav ul .connect .wow {
+    left: -90px;
+  }
+  header nav .burger {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: (10px)[2];
+    -ms-grid-columns: (10px)[2];
+        grid-template: repeat(2, 10px)/repeat(2, 10px);
+    gap: 1px;
+    margin: 0 5px 0 0;
+    z-index: 1;
+  }
+  header nav .burger .burger1,
+  header nav .burger .burger2,
+  header nav .burger .burger3, header nav .burger .burger4 {
+    height: 8px;
+    width: 8px;
+    background-color: var(--white);
+  }
+  header nav .nav-is-active {
+    left: 0;
+  }
+  .lilian {
+    color: var(--red);
+  }
+  footer {
+    height: 100px;
+    display: -ms-grid;
+    display: grid;
+    place-items: center;
+  }
+}
+
+@media only screen and (max-width: 1000px) and (min-width: 601px) {
+  main header nav p {
+    margin: 0 0 0 10px;
+  }
+  main header nav ul {
+    margin: 0 20px 0 0;
+  }
+  main header nav ul li a:hover, main header nav ul li .about:hover {
+    border-radius: 3px;
+  }
+}
+/*# sourceMappingURL=nav.css.map */

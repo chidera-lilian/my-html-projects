@@ -1,0 +1,1022 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #394454;
+}
+
+* img {
+  width: 60px;
+  height: 60px;
+}
+
+* button {
+  -webkit-transition: .4s ease-in-out;
+  transition: .4s ease-in-out;
+  cursor: pointer;
+}
+
+:root {
+  --background: #475569;
+  --background2: #64748B;
+  --red: #932B3F;
+  --white: #CBD5E1;
+  --yellow: #E1994F;
+  --green: #00B25A;
+}
+
+body {
+  position: relative;
+  overflow-x: hidden;
+}
+
+.options {
+  margin: 30px 0 30px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.options h1 {
+  font-size: 1.5rem;
+  text-decoration: underline;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+aside {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  height: auto;
+  display: none;
+}
+
+aside div {
+  font-size: 1rem;
+}
+
+header {
+  background-color: var(--red);
+  -webkit-transition: 1.2s ease-in-out;
+  transition: 1.2s ease-in-out;
+}
+
+header nav ul li a, header nav ul li .about {
+  color: white;
+}
+
+main {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  -webkit-transition: 1.5s ease-in-out;
+  transition: 1.5s ease-in-out;
+  left: 0;
+  position: relative;
+}
+
+main aside {
+  display: none;
+}
+
+main section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 2rem;
+  width: 60%;
+  height: 100%;
+}
+
+main section aside {
+  height: 100%;
+  width: 15%;
+}
+
+main section .wrapper1 {
+  width: 100%;
+}
+
+main section .wrapper1 figure {
+  height: 450px;
+  width: 100%;
+  margin: 0 0 150px 0;
+  border: 3px solid var(--red);
+}
+
+main section .wrapper1 figure img {
+  height: 100%;
+  width: 100%;
+  -webkit-clip-path: url(#shape);
+          clip-path: url(#shape);
+}
+
+main section .wrapper1 figure figcaption {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+main section .wrapper1 figure figcaption h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 80%;
+}
+
+main section .wrapper1 figure figcaption h1 a {
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: .2rem;
+  color: var(--red);
+}
+
+main section .wrapper1 figure figcaption h1 p {
+  text-align: center;
+}
+
+.essentials {
+  position: absolute;
+  right: -1500px;
+  top: 17vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 100px;
+  margin: 50px 0 0 0;
+  -webkit-transition: 1.5s ease-in-out;
+  transition: 1.5s ease-in-out;
+}
+
+.essentials .stop-watch {
+  width: 60%;
+  height: auto;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  border: 2px solid var(--yellow);
+  border-radius: 10px;
+  margin: 0 0 80px 0;
+}
+
+.essentials .stop-watch h2 {
+  font-size: 2rem;
+  letter-spacing: .2rem;
+}
+
+.essentials .stop-watch .timer {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #394454;
+}
+
+.essentials .stop-watch .timer .minute, .essentials .stop-watch .timer .second {
+  font-size: 7rem;
+  border-radius: 20px;
+  height: 150px;
+  width: 200px;
+  color: var(--yellow);
+  text-align: center;
+}
+
+.essentials .stop-watch .timer span {
+  font-size: 8rem;
+  padding-bottom: 1rem;
+  height: 100%;
+  width: 40px;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  color: var(--yellow);
+}
+
+.essentials .stop-watch .start-reset {
+  width: 51.2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: var(--yellow);
+  margin-top: 5px;
+}
+
+.essentials .stop-watch .start-reset .start, .essentials .stop-watch .start-reset .watch-reset {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #394454;
+  border: 2px solid;
+  width: 32%;
+  text-align: center;
+  cursor: pointer;
+}
+
+.essentials .chrome-game {
+  background-color: #00B25A;
+  position: relative;
+  width: 100%;
+  height: 50vh;
+  display: none;
+}
+
+.essentials .chrome-game .animal {
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  bottom: 28px;
+  left: 0;
+  background-color: #E1994F;
+}
+
+.essentials .chrome-game .animal img {
+  width: 100%;
+  height: 100%;
+}
+
+.essentials .chrome-game .active-animal {
+  -webkit-animation: jumpDeraJump 0.5s linear infinite;
+          animation: jumpDeraJump 0.5s linear infinite;
+}
+
+@-webkit-keyframes jumpDeraJump {
+  0%, 100% {
+    bottom: 28px;
+  }
+  45%, 55% {
+    bottom: 160px;
+  }
+}
+
+@keyframes jumpDeraJump {
+  0%, 100% {
+    bottom: 28px;
+  }
+  45%, 55% {
+    bottom: 160px;
+  }
+}
+
+.essentials .chrome-game .trees {
+  height: 60px;
+  width: 50px;
+  position: absolute;
+  bottom: 20px;
+  right: -20px;
+}
+
+.essentials .chrome-game .trees img {
+  height: 100%;
+  width: 100%;
+}
+
+.essentials .chrome-game .active-tree {
+  -webkit-animation: treesAnimate 2s linear infinite;
+          animation: treesAnimate 2s linear infinite;
+}
+
+@-webkit-keyframes treesAnimate {
+  0% {
+    right: -125px;
+  }
+  100% {
+    right: 100%;
+  }
+}
+
+@keyframes treesAnimate {
+  0% {
+    right: -125px;
+  }
+  100% {
+    right: 100%;
+  }
+}
+
+.essentials .chrome-game .cloud {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 0;
+  right: -50px;
+}
+
+.essentials .chrome-game .cloud img {
+  width: 100%;
+  height: 100%;
+}
+
+@-webkit-keyframes cloudAnimate {
+  0% {
+    right: -125px;
+  }
+  100% {
+    right: 100%;
+  }
+}
+
+@keyframes cloudAnimate {
+  0% {
+    right: -125px;
+  }
+  100% {
+    right: 100%;
+  }
+}
+
+.essentials .chrome-game .road {
+  position: absolute;
+  bottom: 0;
+  height: 25px;
+  width: 100%;
+}
+
+.essentials .chrome-game .road img {
+  width: 100%;
+  height: 100%;
+}
+
+@-webkit-keyframes roadAnimate {
+  0% {
+    left: 20px;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@keyframes roadAnimate {
+  0% {
+    left: 20px;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+.essentials .chrome-game .score {
+  position: absolute;
+  top: 10px;
+  right: 2px;
+  height: auto;
+  width: auto;
+}
+
+.essentials .chrome-game .game-over {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 1.5rem;
+  font-weight: 800;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.essentials .container, .essentials .container2 {
+  width: 60%;
+  height: auto;
+  margin: 0 0 50px 0;
+  border: 2px solid var(--yellow);
+  border-radius: 10px;
+}
+
+.essentials .container h2, .essentials .container2 h2 {
+  text-align: center;
+  font-size: 2rem;
+  letter-spacing: .2rem;
+}
+
+.essentials .container p, .essentials .container2 p {
+  text-align: center;
+  font-size: 1.5rem;
+  width: 70%;
+  margin: 0 0 0 100px;
+}
+
+.essentials .container .text-container, .essentials .container2 .text-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.essentials .container .text-container input, .essentials .container2 .text-container input {
+  width: 60%;
+  height: 70px;
+  font-size: 1.5rem;
+  padding: 0 0 0 1rem;
+  border: none;
+  border-radius: 10px;
+  margin: 0 0 0 5px;
+  outline: 1px solid var(--background);
+}
+
+.essentials .container .text-container input:focus, .essentials .container2 .text-container input:focus {
+  outline: 1px solid #932B3F;
+}
+
+.essentials .container .text-container button, .essentials .container2 .text-container button {
+  width: 20%;
+  height: 50px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-size: 1.5rem;
+  background-color: var(--green);
+  color: var(--white);
+  border: none;
+  border-radius: 20px;
+  margin: 0 15px 0 0;
+}
+
+.essentials .container .text-container button:hover, .essentials .container2 .text-container button:hover {
+  background-color: var(--white);
+  color: var(--green);
+}
+
+.essentials .container .task-show, .essentials .container .complete, .essentials .container2 .task-show, .essentials .container2 .complete {
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 20px 0 0 0;
+  border-top: 1px solid var(--green);
+}
+
+.essentials .container .task-show .all-task, .essentials .container .complete .all-task, .essentials .container2 .task-show .all-task, .essentials .container2 .complete .all-task {
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.essentials .container .task-show .all-task .todo-item, .essentials .container .complete .all-task .todo-item, .essentials .container2 .task-show .all-task .todo-item, .essentials .container2 .complete .all-task .todo-item {
+  width: 60%;
+  height: 40px;
+  font-size: 1.4rem;
+  word-break: break-all;
+  letter-spacing: .15rem;
+  margin: 5px 0 0 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 0 0 .4rem;
+  color: var(--background);
+  border: 1px solid var(--background);
+}
+
+.essentials .container .task-show .all-task .del-btn, .essentials .container .complete .all-task .del-btn, .essentials .container2 .task-show .all-task .del-btn, .essentials .container2 .complete .all-task .del-btn {
+  width: 20%;
+  font-size: 1.5rem;
+  height: 50px;
+  background-color: var(--red);
+  color: var(--white);
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  border: none;
+  margin: 0 15px 0 0;
+  border-radius: 20px;
+}
+
+.essentials .container .task-show .all-task .del-btn:hover, .essentials .container .complete .all-task .del-btn:hover, .essentials .container2 .task-show .all-task .del-btn:hover, .essentials .container2 .complete .all-task .del-btn:hover {
+  color: var(--red);
+  background-color: var(--white);
+}
+
+.essentials .container .task-show .all-task .completed-btn, .essentials .container .complete .all-task .completed-btn, .essentials .container2 .task-show .all-task .completed-btn, .essentials .container2 .complete .all-task .completed-btn {
+  height: 50px;
+  border-radius: 20px;
+  background-color: var(--background);
+  color: var(--white);
+  font-size: 1.5rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 15%;
+  border: none;
+}
+
+.essentials .container .task-show .all-task .completed-btn:hover, .essentials .container .complete .all-task .completed-btn:hover, .essentials .container2 .task-show .all-task .completed-btn:hover, .essentials .container2 .complete .all-task .completed-btn:hover {
+  background-color: var(--white);
+  color: var(--background);
+}
+
+.essentials .container .complete, .essentials .container2 .complete {
+  margin: 20px 0 0 0;
+  border-top: 1px solid var(--yellow);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.essentials .container .complete h2, .essentials .container2 .complete h2 {
+  letter-spacing: .12rem;
+  font-size: 1.9rem;
+  margin: 0 0 5px 0;
+}
+
+.essentials .container .complete div, .essentials .container2 .complete div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.essentials .container .complete div p, .essentials .container2 .complete div p {
+  width: 60%;
+  height: 40px;
+  font-size: 1.3rem;
+  word-break: break-all;
+  letter-spacing: .15rem;
+  margin: 5px 0 0 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 0 0 .4rem;
+  color: var(--background);
+  border: 1px solid var(--background);
+}
+
+.essentials .container .complete div button, .essentials .container2 .complete div button {
+  width: 20%;
+  height: 50px;
+  border: none;
+  border-radius: 20px;
+  font-size: 1.5rem;
+  margin: 0 15px 0 0;
+  color: var(--white);
+  background-color: var(--yellow);
+}
+
+.essentials .container .complete div button:hover, .essentials .container2 .complete div button:hover {
+  background-color: var(--white);
+  color: var(--yellow);
+}
+
+.essentials .container2 {
+  background-color: var(--yellow);
+  margin-top: 50px;
+}
+
+.essentials .container2 h2 {
+  font-size: 2rem;
+  letter-spacing: .2rem;
+  text-align: center;
+}
+
+.essentials .container2 p {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.essentials .container2 .counter-container {
+  border-top: 1px solid var(--background2);
+  margin: 10px 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.essentials .container2 .counter-container .count-number {
+  font-size: 5rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 0 0 0;
+  color: var(--background);
+}
+
+.essentials .container2 .counter-container .buttons {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.essentials .container2 .counter-container .buttons button {
+  border: none;
+  height: 35px;
+  width: 100px;
+  margin: 0 0 5px 5px;
+  border-radius: 5px;
+  color: #f4eaea;
+  font-size: 1.2rem;
+  font-weight: 500;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.essentials .container2 .counter-container .buttons .add {
+  background-color: #00B25A;
+}
+
+.essentials .container2 .counter-container .buttons .add:hover {
+  color: var(--green);
+  background-color: var(--white);
+}
+
+.essentials .container2 .counter-container .buttons .reset {
+  background-color: var(--background);
+}
+
+.essentials .container2 .counter-container .buttons .reset:hover {
+  background-color: var(--white);
+  color: var(--background);
+}
+
+.essentials .container2 .counter-container .buttons .reduce {
+  background-color: #932B3F;
+}
+
+.essentials .container2 .counter-container .buttons .reduce:hover {
+  background-color: var(--white);
+  color: var(--red);
+}
+
+.clicked {
+  right: 0;
+}
+
+.yellow {
+  color: #E1994F;
+}
+
+.left {
+  left: -1500px;
+}
+
+footer {
+  height: 8vh;
+  bottom: 0;
+  background-color: var(--red);
+  margin: 100px 0 0 0;
+}
+
+footer p {
+  color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  * {
+    font-size: 1rem;
+  }
+  body {
+    overflow-x: hidden;
+  }
+  header {
+    height: 8vh;
+  }
+  header nav ul .class {
+    width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    display: -ms-grid;
+    display: grid;
+    place-items: center;
+    margin-top: 50px;
+  }
+  header nav ul .class img {
+    -webkit-animation: none;
+            animation: none;
+    height: 130px;
+    width: 100px;
+    position: unset;
+    border: 8px dotted var(--yellow);
+    border-radius: 50%;
+  }
+  .options {
+    margin: 30px 0 30px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .options h1 {
+    font-size: 1.2rem;
+    text-decoration: underline;
+  }
+  main {
+    position: relative;
+    display: -ms-grid;
+    display: grid;
+    place-items: center;
+  }
+  main section {
+    width: 95%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main section aside:nth-of-type(1) {
+    display: none;
+  }
+  main section aside {
+    margin: 0 0 150px 0;
+    width: auto;
+    height: auto;
+    text-align: center;
+    display: none;
+  }
+  main section .wrapper1 {
+    display: -ms-grid;
+    display: grid;
+    place-items: center;
+    width: 100%;
+  }
+  main section .wrapper1 figure {
+    margin: 0 0 120px 0;
+    height: 200px;
+    width: 85%;
+  }
+  main section .wrapper1 figure img {
+    height: 100%;
+    width: 100%;
+  }
+  main section .wrapper1 figure figcaption {
+    margin: 0 0 10px 0;
+  }
+  main section .wrapper1 figure figcaption h1 a {
+    font-size: 1.2rem;
+    letter-spacing: .1rem;
+  }
+  main section .wrapper1 figure figcaption h1 p {
+    font-size: 1rem;
+  }
+  main section .wrapper1 figure:nth-of-type(3) {
+    margin: 80px 0 150px 0;
+  }
+  main section .wrapper1 figure:nth-of-type(4) {
+    margin: 0 0 150px 0;
+  }
+  header {
+    background-color: #932B3F;
+  }
+  .essentials {
+    width: 100%;
+    left: -500px;
+    top: 12vh;
+  }
+  .essentials h1 {
+    letter-spacing: .07rem;
+  }
+  .essentials .stop-watch {
+    width: 90%;
+  }
+  .essentials .stop-watch .timer {
+    width: 100%;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .essentials .stop-watch .timer .minute, .essentials .stop-watch .timer .second {
+    font-size: 3.5rem;
+    width: 100px;
+    height: 100px;
+    display: -ms-grid;
+    display: grid;
+    place-items: center;
+  }
+  .essentials .stop-watch .timer span {
+    font-size: 4rem;
+  }
+  .essentials .stop-watch .start-reset {
+    width: 100%;
+    margin-top: 1px;
+  }
+  .essentials .stop-watch .start-reset .start, .essentials .stop-watch .start-reset .watch-reset {
+    width: 40%;
+    font-size: 1rem;
+  }
+  .essentials .container, .essentials .container2 {
+    width: 90%;
+  }
+  .essentials .container h2, .essentials .container2 h2 {
+    font-size: 1.2rem;
+    letter-spacing: 0.07rem;
+  }
+  .essentials .container p, .essentials .container2 p {
+    text-align: center;
+    width: 100%;
+    margin: 0 0 20px 0;
+    font-size: 1rem;
+  }
+  .essentials .container .text-container input, .essentials .container2 .text-container input {
+    height: 40px;
+    font-size: 1rem;
+    border-radius: 5px;
+  }
+  .essentials .container .text-container button, .essentials .container2 .text-container button {
+    height: 40px;
+    font-size: 1rem;
+    border-radius: 5px;
+    margin: 0 2px 0 0;
+  }
+  .essentials .container .task-show h2, .essentials .container2 .task-show h2 {
+    letter-spacing: 0;
+    margin-top: 10px;
+  }
+  .essentials .container .task-show .all-task, .essentials .container2 .task-show .all-task {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .essentials .container .task-show .all-task .todo-item, .essentials .container2 .task-show .all-task .todo-item {
+    width: 60%;
+    font-size: 1rem;
+    height: 40px;
+    text-overflow: ellipsis;
+  }
+  .essentials .container .task-show .all-task .completed-btn, .essentials .container2 .task-show .all-task .completed-btn {
+    font-size: 1rem;
+    height: 40px;
+    border-radius: 5px;
+  }
+  .essentials .container .task-show .all-task .del-btn, .essentials .container2 .task-show .all-task .del-btn {
+    font-size: 1rem;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: 0;
+    height: 40px;
+    width: 60px;
+    border-radius: 5px;
+    margin: 0 2px 0 0;
+  }
+  .essentials .container .complete h2, .essentials .container2 .complete h2 {
+    font-size: 1rem;
+  }
+  .essentials .container .complete div p, .essentials .container2 .complete div p {
+    font-size: 1rem;
+  }
+  .essentials .container .complete div button, .essentials .container2 .complete div button {
+    height: 40px;
+    width: 20%;
+    color: white;
+    font-size: 1rem;
+    border-radius: 5px;
+    margin: 0 2px 0 0;
+  }
+  .essentials .container2 .counter-container .buttons {
+    width: 100%;
+  }
+  .essentials .container2 .counter-container .buttons button {
+    width: 100px;
+    background-color: aqua;
+  }
+  .essentials .container2 .counter-container .buttons .reset {
+    background-color: var(--background);
+  }
+  footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+  .clicked {
+    left: 0;
+  }
+  .left {
+    left: -500px;
+  }
+  .header-yellow {
+    background-color: var(--yellow);
+  }
+  .lilian {
+    color: var(--red);
+    z-index: 9;
+    background-color: var(--red);
+    color: #000;
+  }
+}
+
+@media only screen and (max-width: 1000px) and (min-width: 601px) {
+  main section {
+    width: 70%;
+  }
+  main section .wrapper1 figure {
+    height: 300px;
+  }
+  main section .wrapper1 figure:nth-of-type(3) {
+    margin: 300px 0 250px 0;
+  }
+  .essentials {
+    right: -800px;
+  }
+  .essentials .stop-watch {
+    width: 70%;
+  }
+  .essentials .stop-watch .start-reset {
+    width: 82%;
+  }
+  .essentials .container, .essentials .container2 {
+    width: 70%;
+  }
+  .clicked {
+    right: 0;
+  }
+  .left {
+    left: -700px;
+  }
+}
+/*# sourceMappingURL=dera-portfolio.css.map */

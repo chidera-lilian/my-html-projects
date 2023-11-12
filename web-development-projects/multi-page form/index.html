@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Form</title>
+  </head>
+  <body>
+    <!--I added span elements under the input tags that require validation. I added an iput-field class to all input elements. I also added a "btn-next" class to the final submit button
+    
+    btw, this html looks so much better than when you used bootstrap.-->
+    <form action="#" class="form">
+      <h1 class="text-center">FORM</h1>
+      <!-- Progress bar -->
+      <div class="progressbar">
+        <div class="progress" id="progress"></div>
+
+        <div
+          class="progress-step progress-step-active"
+          data-title="Details"></div>
+        <div class="progress-step" data-title="Fraud Information"></div>
+        <div class="progress-step" data-title="Subject Details"></div>
+        <div class="progress-step" data-title="Sign"></div>
+      </div>
+
+      <!-- Steps -->
+      <!--user details-->
+      <div class="form-step form-step-active">
+        <div class="input-group">
+          <label for="name">Full Name:</label>
+          <input class="input-field" type="text" name="name" id="name" />
+          <span class="span"></span>
+        </div>
+
+        <div class="input-group">
+          <label for="email">Email:</label>
+          <input class="input-field" type="email" name="email" id="email" required="@" />
+          <span class="span"></span>
+
+        </div>
+        <div class="input-group">
+          <label for="country">Select Country:</label>
+          <select name="country" id="country">
+            <option value="">--select country--</option>
+          </select>
+        </div>
+
+        <div class="input-group">
+          <label for="dob">Date of Birth:</label>
+          <input class="input-field" type="date" name="dob" id="dob" />
+        </div>
+
+        <div class="input-group">
+          <label for="phone">Phone Number:</label>
+          <input class="input-phone" type="numeric" name="phone" id="phone" />
+          <span class="span"></span>
+        </div>
+
+        <div class="">
+          <a href="#" class="btn btn-next width-50 ml-auto">Next</a>
+        </div>
+      </div>
+
+      <!--ffi-->
+      <div class="form-step">
+        <div class="input-group">
+          <label for="amount">Amount Lost:</label>
+          <input class="input-field" type="numeric" name="amount" id="amount" />
+          <span class="span"></span>
+        </div>
+
+        <div class="input-group">
+          <label for="transaction">Transaction Type:</label>
+          <select name="transaction" id="transaction">
+            <option value="">--please select--</option>
+          </select>
+        </div>
+
+        <div class="input-group">
+          <label for="device"
+            >Was your device hacked during the incident?</label
+          >
+          <select name="device" id="device">
+            <option value="">--please select--</option>
+            <option value="yes">YES</option>
+            <option value="no">NO</option>
+            <option value="maybe">maybe</option>
+          </select>
+
+        </div>
+        <div class="input-group">
+          <label for="description">Please tell us more:</label>
+          <textarea
+            name="description"
+            id="description"
+            cols="30"
+            class="input-field"
+            rows="10"></textarea>
+            <span class="span"></span>
+        </div>
+
+        <div class="btns-group">
+          <a href="#" class="btn btn-prev">Previous</a>
+          <a href="#" class="btn btn-next">Next</a>
+        </div>
+      </div>
+
+      <!--subject details-->
+      <div class="form-step">
+        <div class="input-group">
+          <label for="sname">Subjects Name:</label>
+          <input class="input-field" type="text" name="sname" id="sname" />
+          <span class="span"></span>
+        </div>
+
+        <div class="input-group">
+          <label for="semail">Email:</label>
+          <input class="input-field" type="email" name="semail" id="semail" />
+          <span class="span"></span>
+        </div>
+
+        <div class="input-group">
+          <label for="website">Website link:</label>
+          <input class="input-field" type="text" name="website" id="website" />
+          <span class="span"></span>
+        </div>
+
+        <div class="input-group">
+          <label for="sphone">Subjects Phone Number:</label>
+          <input class="input-phone2" type="numeric" name="sphone" id="sphone" />
+          <span class="span"></span>
+        </div>
+
+        <div class="btns-group">
+          <a href="#" class="btn btn-prev">Previous</a>
+          <a href="#" class="btn btn-next">Next</a>
+        </div>
+      </div>
+
+      <!--acknowledgement-->
+      <div class="form-step">
+        <div class="input-group">
+          <p>
+            Please read the following statement and ascertain your agreement by
+            typing your full name in the box provided below: By digitally
+            signing this document, I confirm that the information I provided is,
+            to the best of my knowledge, true and accurate. I am aware that
+            providing false information may result in a fine, imprisonment, or
+            both.
+          </p>
+          <label for="ack">Sign:</label>
+          <input class="input-field field" type="text" name="ack" id="ack" />
+          <span class="span"></span>
+        </div>
+        <div class="btns-group">
+          <a href="#" class="btn btn-prev">Previous</a>
+          <input class="btn-next btn" type="submit" value="Submit"/>
+          <!-- <button class="btn btn-next" type="button">Submit</button> -->
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
